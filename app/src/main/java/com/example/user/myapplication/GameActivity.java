@@ -25,12 +25,15 @@ public class GameActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ResultActivity.class);
         intent.putExtra("hand", Hand.ROCK);
         startActivity(intent);
-
     }
     public void onScissorsButtonClicked(View button){
-        Log.d(getClass().toString(), "Scissors button pressed.");
+        Intent intent = new Intent(this, ResultActivity.class);
+        intent.putExtra("hand", Hand.SCISSORS);
+        startActivity(intent);
     }
     public void onPaperButtonClicked(View button){
-        Log.d(getClass().toString(), "Paper button pressed.");
+        Intent intent = new Intent(this, ResultActivity.class);
+        intent.putExtra("hand", Hand.PAPER);
+        startActivity(intent);
     }
 }
