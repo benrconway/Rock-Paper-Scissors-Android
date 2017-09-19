@@ -4,9 +4,6 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- * Created by user on 19/09/2017.
- */
 
 public class GameTest {
     Game game;
@@ -18,6 +15,25 @@ public class GameTest {
         assertEquals(result, "It's a draw!");
     }
 
-    
+    @Test
+    public void player1CanWin(){
+        game = new Game(Hand.PAPER, Hand.ROCK);
+        String result = game.compete();
+        assertEquals(result, "Player 1 wins!");
+    }
+
+    @Test
+    public void player2CanWin(){
+        game = new Game(Hand.ROCK, Hand.PAPER);
+        String result = game.compete();
+        assertEquals(result, "Player 2 wins!");
+    }
+
+    @Test
+    public void testScissorsCanWin(){
+        game = new Game(Hand.PAPER, Hand.SCISSORS);
+        String result = game.compete();
+        assertEquals(result, "Player 2 wins!");
+    }
 
 }
