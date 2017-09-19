@@ -16,6 +16,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".ResultActivity"
+            android:label="Vae Victus"
+            android:parentActivityName=".GameActivity"
+            >
+
+        </activity>
+
     </application>
 
 </manifest>
