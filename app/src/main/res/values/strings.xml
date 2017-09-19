@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Rock, Paper, Scissors</string>
     <string name="welcome_text">Welcome and choose your Destiny!</string>
+    <string name="rock_string">Rock</string>
+    <string name="paper_text">Paper</string>
+    <string name="scissors_text">Scissors</string>
 </resources>
