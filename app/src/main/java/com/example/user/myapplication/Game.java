@@ -18,9 +18,9 @@ public class Game {
         victoryMethod.put(Hand.PAPER, Hand.ROCK);
     }
 
-    public Game(Hand hand1, Hand hand2){
-        hand1 = hand1;
-        hand2 = hand2;
+    public Game(Hand firstHand, Hand secondHand){
+        this.hand1 = firstHand;
+        this.hand2 = secondHand;
     }
 
     public Hand getHand1() {
