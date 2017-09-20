@@ -5,4 +5,5 @@
     <string name="paper_text">Paper</string>
     <string name="scissors_text">Scissors</string>
     <string name="entry_text">Behold! YOUR DESTINY IS...</string>
+    <string name="play_again">Play Again</string>
 </resources>

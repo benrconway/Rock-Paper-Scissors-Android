@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -14,12 +16,14 @@ public class ResultActivity extends AppCompatActivity {
     TextView resultText;
     Game game;
     ImageView image1, image2;
+    Button playAgainButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
 
+        playAgainButton = (Button) findViewById(R.id.play_again_button);
         resultText = (TextView) findViewById(R.id.result_text);
         game = new Game();
         image1 = (ImageView) findViewById(R.id.imageView);
@@ -39,6 +43,11 @@ public class ResultActivity extends AppCompatActivity {
 
     }
 
+    public void onPlayAgainButtonClicked(View button){
+        Intent intentToReturn = new Intent(this, GameActivity.class);
+        startActivity(intentToReturn);
+    }
+
 
     public Drawable getImage(Hand hand){
         if (hand == Hand.ROCK){
@@ -53,3 +62,9 @@ public class ResultActivity extends AppCompatActivity {
     }
 
 }
+
+
+
+
+
+

@@ -17,11 +17,11 @@ public class Game {
         setUpWinStrategy();
     }
 
-    public Game(Hand firstHand, Hand secondHand){
-        this.hand1 = firstHand;
-        this.hand2 = secondHand;
-        setUpWinStrategy();
-    }
+//    public Game(Hand firstHand, Hand secondHand){
+//        this.hand1 = firstHand;
+//        this.hand2 = secondHand;
+//        setUpWinStrategy();
+//    }
 
     public void setUpWinStrategy(){
         victoryMethod = new HashMap<>();
@@ -34,17 +34,17 @@ public class Game {
         return hand1;
     }
 
-    public void setHand1(Hand hand1) {
-        this.hand1 = hand1;
-    }
+//    public void setHand1(Hand hand1) {
+//        this.hand1 = hand1;
+//    }
 
     public Hand getHand2() {
         return hand2;
     }
 
-    public void setHand2(Hand hand2) {
-        this.hand2 = hand2;
-    }
+//    public void setHand2(Hand hand2) {
+//        this.hand2 = hand2;
+//    }
 
     public void setHands(Hand playerHand){
         this.hand1 = playerHand;
@@ -72,3 +72,14 @@ public class Game {
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+

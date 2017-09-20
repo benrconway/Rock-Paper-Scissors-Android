@@ -9,22 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".GameActivity">
+        <activity android:name=".WelcomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".ResultActivity"
             android:label="Vae Victus"
-            android:parentActivityName=".GameActivity"
+            android:parentActivityName=".GameActivity">
+
+        </activity>
+        <activity
+            android:name=".GameActivity"
+            android:label="Game Time"
+            android:parentActivityName=".WelcomeActivity"
             >
 
         </activity>
-
     </application>
 
 </manifest>
